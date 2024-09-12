@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+.tabel {
+    display: flex;
+    justify-content: center;
+}
+th {
+    background-color: rgb(255, 169, 198);
+}
+
+.JK {
+    background-color: rgb(255, 169, 198);
+}
+
+td {
+    text-align: center;
+}
+
+.tw {
+    background-color: rgb(255, 169, 198);
+}

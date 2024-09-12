@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Tanggal Display</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 115px;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <input type="date" id="inputDate">
+        <button onclick="search()">Submit</button>
+        <p id="result">Tidak mencari data..</p>
+    </div>
+
+    <script>
+        function search() {
+            const input = document.getElementById("inputDate").value.trim();
+            const result = document.getElementById("result");
+
+            let bulan = input.slice(5,7)
+            const tanggal = input.slice(8,10)
+            const tahun = input.slice(0,4)
+
+            switch(bulan){
+                case '01':
+                bulan = 'Januari';
+                break;
+                case '02':
+                bulan = 'Febuari'
+                break;
+                case '03':
+                bulan = 'Maret'
+                case '04':
+                bulan = 'April'
+                case '05':
+                bulan = 'Mei'
+                case '06':
+                bulan = 'Juni'
+                case '07':
+                    bulan = 'Juli'
+                    break;
+                case '08':
+                    bulan = 'Agustus'
+                    break;
+                case '09':
+                    bulan = 'September'
+                    break;
+                case '10':
+                    bulan = 'Oktober'
+                    break;
+                case '11':
+                    bulan = 'November'
+                    break;
+                case '12':
+                    bulan = 'Desember'
+                    break;
+
+            }
+            
+            console.log(bulan)
+            console.log(tanggal)
+            console.log(tahun)
+            
+
+            result.textContent = input ? `Mencari data tanggal ${tanggal} ${bulan} ${tahun}` : "Tidak mencari data";
+        }
+</script>
+
+</body>
+</html>

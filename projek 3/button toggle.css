@@ -1,0 +1,39 @@
+body {
+    text-align: center;
+}
+label {
+    display: flex;
+    justify-content: center;
+}
+.button-toggle {
+    width: 60px;
+    height: 30px;
+    background-color: rgb(196, 188, 188);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-toggle .bulet {
+    width: 26px;
+    height: 26px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .button-toggle {
+    background-color: #464cee;
+}
+
+input[type="checkbox"]:checked + .button-toggle .bulet {
+    left: 32px;
+}

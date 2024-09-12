@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="imageSelect">
+        <option value="image1.jpg">Gambar 1</option>
+        <option value="image2.jpg">Gambar 2</option>
+        <option value="image3.jpg">Gambar 3</option>
+    </select>
+
+    <select id="imageOpacity">
+        <option value="1">1</option>
+        <option value="0.5">0.5</option>
+        <option value="0.2">0.2</option>
+    </select>
+    <input type="submit" value="Kirim" onclick="changeImageAndOpacity()">
+    <img id="imageDisplay" src="image1.jpg" alt="Selected Image" style="opacity: 1; width: 300px;">
+
+    <script>
+        function changeImageAndOpacity () {
+            var imageSelect  = document.getElementById("imageSelect");
+            var imageOpacity = document.getElementById("imageOpacity");
+            var imageDisplay = document.getElementById("imageDisplay");
+        }
+    
+            var selectedImage = imageSelect.value;
+            var selectedOpacity = imageOpacity.value;
+
+            imageDisplay.src = selectedImage;
+            imageDisplay.style.opacity = selectedOpacity;
+    </script>   
+</body>
+</html>

@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+.header {
+    background-color: rgb(138, 61, 61);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 65px;
+}
+.header-right {
+    font-size: 35px;
+    padding: 15px;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    color: white;
+    margin-left: 955px;
+}
+nav {
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+}
+nav a {
+    text-decoration: none;
+}
+nav li {
+    list-style: none;
+    display: inline-block;
+    padding: 30px 40px;
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+}
+
+.font1 h1 {
+    padding-top: 90px;
+    padding-left: 50px;
+    font-size: 65px;
+    color: white;
+}
+.font1 img {
+    position: absolute;
+    border-radius: 100px 0px;
+    margin-left: 955px;
+}
+.font1 button {
+    border-radius: 25px;
+    margin-top: 15px;
+    padding: 5px 15px;
+    margin-left: 65px;
+}
+
+.fa-solid {
+    margin-left: 15px;
+}
+
+.best-services h1 {
+    text-align: center;
+    padding: 55px;
+    color: rgb(138, 61, 61);
+}
+.best-services p {
+    text-align: center;
+    font-size: 15px;
+}
+.best-1 {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    height: 100px;
+    flex-direction: row;  
+    margin-left: 5px;
+}
+.best-img {
+    width: 100px;
+    height: 100px;
+    margin: 15px;
+    display: flex;
+}
+.best-semua {
+    padding: 75px;
+}
+.read-more {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: rgb(138, 61, 61);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+}
+footer {
+    background-color: rgb(138, 61, 61);
+    padding: 80px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+}
+.footer-contents h4 {
+    font-size: 20px;
+}
+.footer-contents p{
+    margin: 20px 50px 20px 0px;
+}
+.footer-contents li {
+    margin: 20px 50px 20px 0px;
+    text-decoration: none;
+    display: block;
+}
+.footer-contents a {
+    text-decoration: none;
+    color: white;
+}
+
+
+

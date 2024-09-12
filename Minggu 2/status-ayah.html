@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #wrap {
+        display: none;
+    }
+</style>
+<body>
+    <div>
+        <label for="">Status Ayah :</label>
+        <br>
+        <input type="radio" name="hidup" id="hidupYa" value="ya" onclick="statusAyah(this)">
+        <label for="hidupYa">Masih Hidup</label>
+        <br>
+        <input type="radio" name="hidup" id="meninggalTidak" value="tidak" onclick="statusAyah(this)">
+        <label for="meninggalTidak">Meninggal</label>
+        <br>
+        <input type="radio" name="hidup" id="tidakdiketahuiTidak" value="tidakDiketahui" onclick="statusAyah(this)">
+        <label for="tidakdiketahuiTidak">Tidak Diketahui</label>
+    </div>
+    <div id="wrap">
+        <div>
+          <label for="" name="" id="">Pendidikan Ayah*</label>
+          <br>
+          <select id="">
+            <option value="">Pilih</option>
+            <option value="SD">SD</option>
+            <option value="SMP">SMP</option>
+            <option value="SMA">SMA</option>
+            <option value="D1">D1</option>
+            <option value="D2">D2</option>
+            <option value="D3">D3</option>
+            <option value="S1">S1</option>
+            <option value="S2">S2</option>
+            <option value="S3">S3</option>
+          </select>
+        </div>
+        <br>
+        <div>
+            <label for="" name="" id="">Pekerjaan Ayah*</label>
+            <br>
+            <select id="">
+                <option value="">Pilih</option>
+                <option value="PNS">PNS</option>
+                <option value="Swasta">Swasta</option>
+                <option value="Wirausaha">Wirausaha</option>
+              </select>
+        </div>
+        <br>
+        <div>
+            <label for="" name="" id="">Deskripsi Pekerjaan Ayah*</label>
+            <br>
+            <input type="text" placeholder = "tuliskan spesifikasi pekerjaan">
+        </div>
+        <br>
+        <div>
+           <label for="" name="" id="">Total Penghasilan Ayah Perbulan*</label>
+           <br>
+            <input type="text">
+            <br>
+            <b>bila tidak memiliki penghasilan tulis '0'</b>
+        </div>
+        <br>
+        <div>
+            <label for="" id="ubah">Detail Ayah Bekerja, Berapa Lama Sudah Bekerja, Kondisi Kesehatan, dan Karir Profesinya*</label>
+            <br>
+             <input type="text">
+         </div>
+    </div>
+    <script>
+        function statusAyah(e) {
+            let wrap = document.getElementById('wrap');
+            if(e.value == "ya") {
+                wrap.style.display = 'block';
+                document.getElementById("ubah").innerText = "Detail Ayah Bekerja, Berapa Lama Sudah Bekerja, Kondisi Kesehatan, dan Karir Profesinya*"
+            }else if (e.value == "tidak") {
+                document.getElementById("ubah").innerText = "Detail Pekerjaan Ayah Semasa Hidup"
+                wrap.style.display = 'block';
+            }else {
+                wrap.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
